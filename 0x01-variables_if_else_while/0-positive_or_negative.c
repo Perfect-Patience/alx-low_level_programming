@@ -17,14 +17,14 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if(n > 0){
-		puts("is positive");
+		puts("%ld is positive",n);
 	}
 	else if(n < 0){
-		puts("is negative");
+		puts("%ld is negative",n);
 	}
 	else
 	{
-		puts("is zero");
+		printf("%ld is zero",n);
 	}	
 	return (0);
 
