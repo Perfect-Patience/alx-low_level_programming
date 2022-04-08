@@ -25,6 +25,7 @@ int main(void)
 	else
 	{
 		puts("is zero");
+	}	
 	return (0);
 
 }
