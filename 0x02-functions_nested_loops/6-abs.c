@@ -15,6 +15,7 @@ int _abs(int c)
 	{
 		ch = c + '0' ;
 		_putchar(ch);
+	}
 	if (c < 0)
 	{
 		c = (c + 2 * c);
