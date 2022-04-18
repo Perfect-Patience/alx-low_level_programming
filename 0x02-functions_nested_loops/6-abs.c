@@ -10,7 +10,7 @@
 int _abs(int c)
 {
 	if (c >= 0)
-		_putchar(char(c));
+		_putchar(c + '0');
 	if (c < 0)
 	{
 		c = (c + 2 * c);
