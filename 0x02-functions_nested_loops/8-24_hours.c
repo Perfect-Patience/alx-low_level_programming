@@ -10,7 +10,7 @@ void jack_bauer(void)
 	char m1 = '0';
 	char m2 = '0';
 
-	for h1 = '0'; h1 < '3'; h1++)
+	for (h1 = '0'; h1 < '3'; h1++)
 	{
 		while (h2 <= '9')
 		{
@@ -33,5 +33,4 @@ void jack_bauer(void)
 			h2++;
 		}
 	}
-	return (0);
 }
