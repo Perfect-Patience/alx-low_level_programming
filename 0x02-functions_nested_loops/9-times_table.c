@@ -4,8 +4,6 @@
  *times_table - prints multiples of 9
  */
 
-int main(void)
-{
 void times_table(void)
 {
 	int n1, n2, mul;
@@ -22,5 +20,4 @@ void times_table(void)
 				_putchar('\n');
 		}
 	}
-}
 }
