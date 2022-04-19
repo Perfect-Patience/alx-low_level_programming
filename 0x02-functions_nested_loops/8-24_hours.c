@@ -6,18 +6,21 @@
 void jack_bauer(void)
 {
 	char h1;
-	char h2 = '0';
-	char m1 = '0';
-	char m2 = '0';
+	char h2;
+	char m1;
+	char m2;
 
 	for (h1 = '0'; h1 < '3'; h1++)
 	{
+		h2 = '0';
 		while (h2 <= '9')
 		{
+			m1 = '0';
 			if (h1 == '2' && h2 == '3')
 				break;
 			while (m1 <= '5')
 			{
+				m2 = '0';
 				while (m2 <= '9')
 				{
 					_putchar(h1);
@@ -31,6 +34,6 @@ void jack_bauer(void)
 				m1++;
 			}
 			h2++;
-		}
+		i}
 	}
 }
