@@ -16,7 +16,7 @@ void jack_bauer(void)
 		while (h2 <= '9')
 		{
 			m1 = '0';
-			if (h1 == '2' && h2 == '3')
+			if (h1 == '2' && h2 > '3')
 				break;
 			while (m1 <= '5')
 			{
