@@ -5,7 +5,7 @@
  *@s: a pointer as a parameter of a function.
  */
 
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	/* get srting length */
 	int count = 0;
