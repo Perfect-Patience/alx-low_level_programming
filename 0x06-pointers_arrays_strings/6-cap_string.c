@@ -10,7 +10,7 @@
 char *cap_string(char *n)
 {
 	int  separators[] = {9, 10, 30, 32, 34, 40, 41, 44, 46, 59, 63, 123, 125};
-	int i, j;
+	int i, j = 0;
 
 	if (n[i] >= 97 && n[i] <= 122)
 		n[i] -= 32;
