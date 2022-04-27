@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  *_strstr -  locates a substring
  *@haystack: parameter 1, pointer to a string
@@ -10,33 +10,33 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i = 0;
-	int temp, j;
-	int bool = 0;
+	char **ptr1;
+	char **ptr2;
 
-	for (; haystack[i] != '\0'; i++)
+	while (*haystack != '\0')
 	{
-		if (haystack[i] == needle[0])
+		ptr1 = &haystack;
+		ptr2 = &needle;
+		while (*haystack != '\0' && **ptr2 != '\0' && *haystack  == **ptr2)
 		{
-			temp = i;
-			bool = 1;
-			for (j = 1; needle[j] != '\0'; j++)
-			{
-				i++;
-				if (*(haystack + i) == needle[j])
-				{
-					bool = 1;
-				}
-				else
-				{
-					bool = 0;
-					break;
-				}
-			}
+			haystack++;
+			*ptr2++;
 		}
+		if (!**ptr2)
+			return (*ptr1);
+		haystack = *ptr1 + 1;
 	}
-	if (bool == 1)
-		return (haystack + temp);
-	else
-		return ('\0');
+	return (0);
+}
+
+int main(){    
+
+  char str[100]="this is javatpoint with c and java";    
+
+  char *sub;    
+
+  sub=_strstr(str,"java");    
+
+  printf("\nSubstring is: %s",sub);    
+  return (0);  
 }
