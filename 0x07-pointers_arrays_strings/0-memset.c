@@ -2,8 +2,9 @@
 
 /**
  *_memset -  fills memory with a constant byte
- *@s: parameter 1 poniter to the string
+ *@s: parameter 1 pointer to the string
  *@b: parameter 2, char type.
+ *@n: parameter 3, integer, number of items to be replaced
  *
  * Return: returns pointer.
  */
