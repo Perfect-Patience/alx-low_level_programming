@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  *_strstr -  locates a substring
  *@haystack: parameter 1, pointer to a string
@@ -27,16 +27,4 @@ char *_strstr(char *haystack, char *needle)
 		haystack = *ptr1 + 1;
 	}
 	return (0);
-}
-
-int main(){    
-
-  char str[100]="this is javatpoint with c and java";    
-
-  char *sub;    
-
-  sub=_strstr(str,"java");    
-
-  printf("\nSubstring is: %s",sub);    
-  return (0);  
 }
