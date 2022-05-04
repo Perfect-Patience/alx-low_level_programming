@@ -17,26 +17,26 @@ void print_times_table(int n)
 			result = a * i;
 			if (result < 10)
 			{
-				putchar('0' + result);
+				_putchar('0' + result);
 			}
 			else if (result >= 100)
 			{
 				div = result / 10;
-				putchar('0' + div / 10);
-				putchar('0' + div % 10);
-				putchar('0' + result % 10);
+				_putchar('0' + div / 10);
+				_putchar('0' + div % 10);
+				_putchar('0' + result % 10);
 			}
 			else
 			{
-				putchar('0' + result / 10);
-				putchar('0' + result % 10);
+				_putchar('0' + result / 10);
+				_putchar('0' + result % 10);
 			}
 			if (a + 1 <= n)
 			{
-				putchar(',');
-				putchar('\t');
+				_putchar(',');
+				_putchar('\t');
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
