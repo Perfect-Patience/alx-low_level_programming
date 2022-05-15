@@ -16,7 +16,7 @@ int find_square_root(int n, int i)
 		else
 			return (-1);
 	}
-	return (find_square_root(n, i++));
+	return (0 + find_square_root(n, i++));
 }
 /**
  *_sqrt_recursion - finds the square Root of input
