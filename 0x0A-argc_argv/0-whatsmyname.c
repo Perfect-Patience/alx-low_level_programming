@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  *main - prints name of the program
@@ -8,7 +9,7 @@
  * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int UNUSED argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
 
