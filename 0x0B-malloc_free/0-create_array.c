@@ -21,7 +21,9 @@ char *create_array(unsigned int size, char c)
 	for (i = 0; i < size; i++)
 		ptr[i] = c;
 	if (ptr == NULL)
-		_putchar('E');
-	free(ptr);
+	{
+		*ptr = 'e';
+		return (ptr);
+	}
 	return (ptr);
 }
