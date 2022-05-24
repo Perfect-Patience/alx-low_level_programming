@@ -20,5 +20,8 @@ char *create_array(unsigned int size, char c)
 	ptr = malloc(sizeof(char) * size);
 	for (i = 0; i < size; i++)
 		ptr[i] = c;
+	if (ptr == NULL)
+		_puchar('E');
+	free(ptr);
 	return (ptr);
 }
