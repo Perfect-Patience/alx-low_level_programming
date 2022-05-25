@@ -15,26 +15,40 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i = 0;
 	unsigned int j = 0;
 
-	while (s1[i])
-		i++;
-	while (s2[j])
-		j++;
 	if (s1 == NULL)
+	{
 		i = 0;
+	}
+	else
+	{
+		while (s1[i])
+			i++;
+	}
 	if (s2 == NULL)
+	{
 		j = 0;
+	}
+	else
+	{
+		while (s2[j])
+			j++;
+	}
 	ptr = malloc(sizeof(char) * (i + j + 1));
-
 	if (ptr == NULL)
 		return (NULL);
-	for (i = 0; s1[i] != '\0'; i++)
-		ptr[i] = s1[i];
-	for (j = 0; s2[j] != '\0'; j++)
+	if (s1 != NULL)
 	{
-		ptr[i] = s2[j];
-		i++;
+		for (i = 0; s1[i] != '\0'; i++)
+			ptr[i] = s1[i];
 	}
-
+	if (s2 != NULL)
+	{
+		for (j = 0; s2[j] != '\0'; j++)
+		{
+			ptr[i] = s2[j];
+			i++;
+		}
+	}
 	ptr[i] = '\0';
 	return (ptr);
 }
