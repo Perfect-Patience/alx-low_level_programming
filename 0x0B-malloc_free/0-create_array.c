@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  *create_array - creates an array of unknown size and initalizes it
@@ -21,9 +22,7 @@ char *create_array(unsigned int size, char c)
 	for (i = 0; i < size; i++)
 		ptr[i] = c;
 	if (ptr == NULL)
-	{
-		*ptr = 'e';
-		return (ptr);
-	}
+		return (NULL);
+
 	return (ptr);
 }
