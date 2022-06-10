@@ -18,16 +18,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[j])
 		j++;
 
-	if (s1 == NULL)
-		number = j;
+	if (n >= j)
+		number = i + j;
 	if (s2 == NULL)
 		number = i;
-	else if (n >= j)
-		number = i + j;
 	else
 		number = i + n;
 
-	p = malloc(n + 1);
+	p = malloc(number + 1);
 
 	if (p == NULL)
 		return ('\0');
