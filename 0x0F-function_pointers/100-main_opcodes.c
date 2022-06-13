@@ -31,7 +31,9 @@ int main(int argc, char *argv[])
 	opcode = (char *)main;
 	for (i = 0; i < number_of_bytes; i++)
 	{
-		printf("%02x ", opcode[i] & 0xFF);
+		printf("%02x", opcode[i] & 0xFF);
+		if (i < number_of_bytes - 1)
+			putchar(' ');
 	}
 
 	putchar ('\n');
