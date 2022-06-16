@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 			if (*(type_f[j].x) == format[i])
 			{
 				print("%s", s);
-				type_f[j].function(list);
+				type_f[j].func(list);
 				s = ", ";
 				break;
 			}
