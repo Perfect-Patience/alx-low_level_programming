@@ -24,9 +24,7 @@ listint_t *find_listint_loop(listint_t *head)
 			{
 				ptr1 = ptr2;
 				while (ptr1->next != head && ptr1->next != ptr2)
-				{
 					ptr1 = ptr1->next;
-				}
 				if (ptr1->next == head)
 					break;
 
