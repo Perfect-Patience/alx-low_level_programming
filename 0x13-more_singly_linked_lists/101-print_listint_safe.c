@@ -31,7 +31,7 @@ void free_lisp(listp_t **head)
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	unsinged int number_of_nodes = 0;
+	unsigned int number_of_nodes = 0;
 	listp_t *h_ptr, *new, *add;
 
 	h_ptr = NULL;
