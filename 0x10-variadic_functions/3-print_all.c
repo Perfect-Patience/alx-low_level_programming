@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 		{
 			if (*(type_f[j].x) == format[i])
 			{
-				print("%s", s);
+				printf("%s", s);
 				type_f[j].func(list);
 				s = ", ";
 				break;
@@ -67,7 +67,7 @@ void print_int(va_list list)
  */
 void print_float(va_list list)
 {
-	printf("%f", va_arg(list, int));
+	printf("%f", va_arg(list, double));
 }
 /**
  *print_str - prints string

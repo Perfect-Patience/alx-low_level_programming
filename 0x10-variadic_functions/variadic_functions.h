@@ -14,7 +14,7 @@ void print_str(va_list);
 /**
  *struct print_format - formats to print
  *@x: charater to decide format
- *@function: function to cal based on x
+ *@func: function to cal based on x
  */
 typedef struct  print_format
 {
