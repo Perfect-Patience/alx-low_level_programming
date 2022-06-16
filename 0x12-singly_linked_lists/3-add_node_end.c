@@ -1,17 +1,16 @@
 #include "lists.h"
 
 /**
- * add_node_end - adds a new node at the end
- * of a list_t list.
- * @head: head of the linked list.
- * @str: string to store in the list.
- * Return: address of the head.
+ * add_node_end - adds new node at end of a list.
+ * @head: head of list.
+ * @str: string to add.
+ * Return: pointerto head, otherwise NULL.
  */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new, *temp;
-	size_t nchar;
+	int i = 0;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
@@ -19,10 +18,10 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new->str = strdup(str);
 
-	for (nchar = 0; str[nchar]; nchar++)
-		;
+	while (str[i])
+		i++;
 
-	new->len = nchar;
+	new->len = i;
 	new->next = NULL;
 	temp = *head;
 

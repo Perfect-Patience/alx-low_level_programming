@@ -1,17 +1,16 @@
 
 #include "lists.h"
 /**
- * print_list - prints all the elements of a list_t list.
+ * print_list - prints elements in a list.
  * @h: singly linked list.
- * Return: number of elements in the list.
- * Auth: Martins Akhivbareme
+ * Return: number of elements.
  */
 
 size_t print_list(const list_t *h)
 {
-	size_t nelem;
+	size_t size;
 
-	nelem = 0;
+	size = 0;
 	while (h != NULL)
 	{
 		if (h->str == NULL)
@@ -19,7 +18,8 @@ size_t print_list(const list_t *h)
 		else
 			printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
-		nelem++;
+		size++;
 	}
-	return (nelem);
+	return (size);
 }
+
