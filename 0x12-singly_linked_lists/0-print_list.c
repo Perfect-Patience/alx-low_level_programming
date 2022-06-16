@@ -1,4 +1,3 @@
-
 #include "lists.h"
 /**
  * print_list - prints elements in a list.
@@ -22,4 +21,3 @@ size_t print_list(const list_t *h)
 	}
 	return (size);
 }
-
