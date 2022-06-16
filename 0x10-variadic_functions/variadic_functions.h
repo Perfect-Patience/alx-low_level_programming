@@ -1,5 +1,6 @@
 #ifndef VARIADIC_H
 #define VARIADIC_H
+#include <stdarg.h>
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
@@ -10,7 +11,6 @@ void print_char(va_list);
 void print_int(va_list);
 void print_float(va_list);
 void print_str(va_list);
-#include <stdarg.h>
 /**
  *struct print_format - formats to print
  *@x: charater to decide format
