@@ -1,6 +1,3 @@
-101-print_listint_safe.c
-
-
 #include "lists.h"
 
 /**
