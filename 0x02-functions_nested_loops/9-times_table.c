@@ -17,7 +17,6 @@ void times_table(void)
 				if (b != 0)
 					_putchar(' ');
 				_putchar(prod + 48);
-				_putchar(',');
 			}
 			else
 			{
@@ -25,10 +24,10 @@ void times_table(void)
 				dig1 = (prod - dig2) / 10;
 				_putchar(dig1 + 48);
 				_putchar(dig2 + 48);
-				_putchar(',');
 			}
 			if (b != 9)
 			{
+				_putchar(',');
 				_putchar(' ');
 			}
 		}
