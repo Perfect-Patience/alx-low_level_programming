@@ -2,7 +2,7 @@
 /**
  *main - prints the number of arguments passed to it
  *@argc: number of commandline arguments
- *@argv - pointer to arguments
+ *@argv: pointer to arguments
  *Return: 0, always
  */
 
