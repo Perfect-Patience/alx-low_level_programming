@@ -7,11 +7,9 @@
 
 int  find_len(char *s)
 {
-	int i = 0;
-
-	while (s[i] != '\0')
-		i++;
-	return (i);
+	if (*s == '\0')
+		return (0);
+	return (1 + find_len(s + 1));
 }
 
 /**
