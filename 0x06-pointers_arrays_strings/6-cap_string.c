@@ -9,7 +9,7 @@
 char *cap_string(char *s)
 {
 	char sep[] = {9, 10, 32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
-	int j, i = 0, found = 0;
+	int j, i = 0;
 
 	while (s[i] != '\0')
 	{
@@ -17,15 +17,10 @@ char *cap_string(char *s)
 		{
 			if (s[i] == sep[j])
 			{
-				found = 1;
+				if (s[i + 1] > 96 && s[i + 1] < 123)
+					s[i + 1] = s[i + 1] - 32;
 				break;
 			}
-		}
-		if (found == 1)
-		{
-			if (s[i + 1] > 96 && s[i + 1] < 123)
-				s[i + 1] = s[i + 1] - 32;
-			found = 0;
 		}
 		i++;
 	}
