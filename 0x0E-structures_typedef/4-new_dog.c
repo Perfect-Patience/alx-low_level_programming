@@ -18,7 +18,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (p == NULL || !(owner) || !(name))
 	{
 		free(p);
-	k	return (NULL);
+		return (NULL);
 	}
 	while (name[len1])
 		len1++;
