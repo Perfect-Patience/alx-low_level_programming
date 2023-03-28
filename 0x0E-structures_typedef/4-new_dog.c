@@ -18,14 +18,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (p == NULL || !(owner) || !(name))
 	{
 		free(p);
-		return (NULL);
+	k	return (NULL);
 	}
 	while (name[len1])
 		len1++;
 	while (owner[len2])
 		len2++;
-	p->name = malloc(len1);
-	p->owner = malloc(len2);
+	p->name = malloc(len1 + 1);
+	p->owner = malloc(len2 + 1);
 	if (p->name == NULL || p->owner == NULL)
 	{
 		free(p->name);
