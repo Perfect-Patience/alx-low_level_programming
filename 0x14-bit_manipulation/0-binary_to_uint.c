@@ -18,5 +18,5 @@ unsigned int binary_to_uint(const char *b)
 			return(0);
 		result += (b[power] - '0') * (1 << power);
 	}
-	return results;
+	return (result);
 }
